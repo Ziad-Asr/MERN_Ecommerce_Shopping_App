@@ -9,24 +9,26 @@ import ProductList from "./../ProductList/ProductList";
 import Product from "../../pages/Product/Product";
 import Login from "../Login/Login";
 import Register from "./../Register/Register";
+import Cart from "../Cart/Cart";
 
 import "./Home.scss";
 
 const Home = () => {
   return (
     <div>
-      {/* <Announcement />
+      <Announcement />
       <Navbar />
       <Slider />
       <Categories />
       <Products />
       <Newsletter />
-      <Footer /> */}
+      <Footer />
 
       {/* <ProductList /> */}
       {/* <Product /> */}
       {/* <Login /> */}
-      <Register />
+      {/* <Register /> */}
+      {/* <Cart /> */}
     </div>
   );
 };

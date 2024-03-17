@@ -1,8 +1,19 @@
+import registerImage from "../../assets/images/register.jpg";
+
 import styles from "./Register.module.scss";
 
 const Register = () => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{
+        background: `linear-gradient(
+          rgba(255, 255, 255, 0.5),
+          rgba(255, 255, 255, 0.5)
+    ),
+    url(${registerImage}) center`,
+      }}
+    >
       <div className={styles.wrapper}>
         <h1 className={styles.title}>CREATE AN ACCOUNT</h1>
         <form className={styles.form}>

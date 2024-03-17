@@ -4,6 +4,7 @@ import Newsletter from "../../components/Newsletter/Newsletter";
 import Footer from "../../components/Footer/Footer";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
+import productImage from "../../assets/images/productImage.jpg";
 
 import styles from "./Product.module.scss";
 
@@ -16,7 +17,7 @@ const Product = () => {
         <div className={styles.imgContainer}>
           <img
             className={styles.image}
-            src="https://i.ibb.co/S6qMxwr/jean.jpg"
+            src={productImage}
             alt="Denim Jumpsuit"
           />
         </div>
