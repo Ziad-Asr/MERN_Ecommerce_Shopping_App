@@ -5,11 +5,11 @@ import Categories from "../../components/Categories/Categories";
 import Products from "../../components/Products/Products";
 import Newsletter from "../../components/Newsletter/Newsletter";
 import Footer from "../../components/Footer/Footer";
-import ProductList from "./../ProductList/ProductList";
-import Product from "../../pages/Product/Product";
-import Login from "../Login/Login";
-import Register from "./../Register/Register";
-import Cart from "../Cart/Cart";
+// import ProductList from "./../ProductList/ProductList";
+// import Product from "../../pages/Product/Product";
+// import Login from "../Login/Login";
+// import Register from "./../Register/Register";
+// import Cart from "../Cart/Cart";
 
 import "./Home.scss";
 

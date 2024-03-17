@@ -81,6 +81,12 @@
   }
 }
 
+@media (max-width: 1010px) {
+  .title {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     display: none;
