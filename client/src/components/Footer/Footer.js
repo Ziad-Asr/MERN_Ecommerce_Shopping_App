@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        <h1 className={styles.logo}>LAMA.</h1>
+        <h1 className={styles.logo}>Ziad.</h1>
         <p className={styles.desc}>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -66,15 +66,14 @@ const Footer = () => {
       <div className={styles.right}>
         <h3 className={styles.title}>Contact</h3>
         <div className={styles.contactItem}>
-          <RoomIcon style={{ marginRight: "10px" }} /> 622 Dixie Path , South
-          Tobinchester 98336
+          <RoomIcon style={{ marginRight: "10px" }} /> 28 Helwan, Cairo, Egypt
         </div>
         <div className={styles.contactItem}>
           <PhoneIcon style={{ marginRight: "10px" }} /> +1 234 56 78
         </div>
         <div className={styles.contactItem}>
           <MailOutlineOutlinedIcon style={{ marginRight: "10px" }} />{" "}
-          contact@lama.dev
+          contact@ziad.dev
         </div>
         <img
           src="https://i.ibb.co/Qfvn4z6/payment.png"

@@ -16,7 +16,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className={styles.center}>
-          <h1 className={styles.logo}>LAMA.</h1>
+          <h1 className={styles.logo}>Ziad.</h1>
         </div>
         <div className={styles.right}>
           <div className={styles.menuItem}>REGISTER</div>
