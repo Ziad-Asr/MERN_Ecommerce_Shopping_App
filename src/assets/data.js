@@ -1,21 +1,22 @@
 import sliderImage2 from "./images/sliderImage2.png";
 import sliderImage1 from "./images/sliderImage1.png";
+import sliderImage3 from "./images/SliderItem3.jpg";
 import categories1 from "./images/categories1.jpg";
 import categories2 from "./images/categories2.jpg";
 import categories3 from "./images/categories3.jpg";
-import popularProducts1 from "./images/popularProducts1.jpg";
+import popularProducts1 from "./images/popularProducts1.png";
 import popularProducts3 from "./images/popularProducts3.jpg";
 import popularProducts5 from "./images/popularProducts5.jpg";
-import popularProducts7 from "./images/popularProducts7.jpg";
+import popularProducts7 from "./images/popularProducts7.png";
 import popularProducts9 from "./images/popularProducts9.jpg";
 
 export const sliderItems = [
   {
-    // id: 1,
-    // img: "https://i.ibb.co/XsdmR2c/1.png",
-    // title: "SUMMER SALE",
-    // desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    // bg: "f5fafd",
+    id: 1,
+    img: sliderImage1,
+    title: "LOUNGEWEAR LOVE",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: "fbf0f4",
   },
   {
     id: 2,
@@ -26,10 +27,10 @@ export const sliderItems = [
   },
   {
     id: 3,
-    img: sliderImage1,
-    title: "LOUNGEWEAR LOVE",
+    img: sliderImage3,
+    title: "SUMMER SALE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    bg: "fbf0f4",
+    bg: "f5fafd",
   },
 ];
 
