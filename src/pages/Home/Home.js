@@ -7,21 +7,26 @@ import Newsletter from "../../components/Newsletter/Newsletter";
 import Footer from "../../components/Footer/Footer";
 import ProductList from "./../ProductList/ProductList";
 import Product from "../../pages/Product/Product";
+import Login from "../Login/Login";
+import Register from "./../Register/Register";
 
 import "./Home.scss";
 
 const Home = () => {
   return (
     <div>
-      <Announcement />
+      {/* <Announcement />
       <Navbar />
       <Slider />
       <Categories />
       <Products />
       <Newsletter />
-      <Footer />
-      <ProductList />
-      <Product />
+      <Footer /> */}
+
+      {/* <ProductList /> */}
+      {/* <Product /> */}
+      {/* <Login /> */}
+      <Register />
     </div>
   );
 };
