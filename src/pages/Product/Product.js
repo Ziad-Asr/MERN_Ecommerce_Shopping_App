@@ -1,7 +1,7 @@
-import Announcement from "../Announcement/Announcement";
-import Navbar from "../Navbar/Navbar";
-import Newsletter from "../Newsletter/Newsletter";
-import Footer from "../Footer/Footer";
+import Announcement from "../../components/Announcement/Announcement";
+import Navbar from "../../components/Navbar/Navbar";
+import Newsletter from "../../components/Newsletter/Newsletter";
+import Footer from "../../components/Footer/Footer";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 

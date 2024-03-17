@@ -6,6 +6,7 @@ import Products from "../../components/Products/Products";
 import Newsletter from "../../components/Newsletter/Newsletter";
 import Footer from "../../components/Footer/Footer";
 import ProductList from "./../ProductList/ProductList";
+import Product from "../../pages/Product/Product";
 
 import "./Home.scss";
 
@@ -19,7 +20,8 @@ const Home = () => {
       <Products />
       <Newsletter />
       <Footer />
-      {/* <ProductList /> */}
+      <ProductList />
+      <Product />
     </div>
   );
 };
