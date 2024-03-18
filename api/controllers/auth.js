@@ -2,7 +2,7 @@ const CryptoJS = require("crypto-js");
 const jwt = require("jsonwebtoken");
 
 const User = require("../models/User");
-
+// REGISTER USER
 exports.register = async (req, res) => {
   try {
     const newUser = new User({
@@ -22,6 +22,7 @@ exports.register = async (req, res) => {
   }
 };
 
+// LOGIN USER
 exports.login = async (req, res) => {
   try {
     // Find user by username

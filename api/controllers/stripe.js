@@ -1,5 +1,6 @@
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 
+// STRIPE PAYMENT
 exports.stripePayment = (req, res) => {
   stripe.charges.create(
     {
