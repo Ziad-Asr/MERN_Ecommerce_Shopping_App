@@ -10,7 +10,6 @@ const cartRoutes = require("./routes/cart");
 const orderRoutes = require("./routes/order");
 const productRoutes = require("./routes/product");
 const stripeRoutes = require("./routes/stripe");
-const verifyTokenRoutes = require("./routes/verifyToken");
 
 mongoose
   .connect(process.env.MONGO_URL)
@@ -29,7 +28,6 @@ app.use("/api/cart", cartRoutes);
 app.use("/api/order", orderRoutes);
 app.use("/api/product", productRoutes);
 app.use("/api/stripe", stripeRoutes);
-app.use("/api/verifyToken", verifyTokenRoutes);
 
 app.listen(process.env.PORT || 5000, () => {
   console.log(`Backend server is running!`);
