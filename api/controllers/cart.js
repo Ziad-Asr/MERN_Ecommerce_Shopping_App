@@ -20,7 +20,7 @@ exports.getUserCart = async (req, res) => {
   }
 };
 
-// CREATE USER
+// CREATE Cart
 exports.createCart = async (req, res) => {
   const newCart = new Cart(req.body);
 
