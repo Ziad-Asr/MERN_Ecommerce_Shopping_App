@@ -1,11 +1,9 @@
 const router = require("express").Router();
-
 const {
   verifyToken,
   verifyTokenAndAuthorization,
   verifyTokenAndAdmin,
 } = require("../utils/verifyToken");
-
 const cartController = require("../controllers/cart");
 
 //GET ALL
