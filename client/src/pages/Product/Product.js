@@ -92,7 +92,7 @@ const Product = () => {
                 className={styles.icon}
                 onClick={() => handleQuantity("dec")}
               />
-              <span className={styles.amount}>1</span>
+              <span className={styles.amount}>{quantity}</span>
               <AddIcon
                 className={styles.icon}
                 onClick={() => handleQuantity("inc")}
