@@ -1,9 +1,10 @@
 import StripeCheckout from "react-stripe-checkout";
 import { useEffect, useState } from "react";
 import { userRequest } from "../../requestMethods";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { setStripeResponse, setSuccessPageCarts } from "../../redux/cartRedux";
 
 import Announcement from "../../components/Announcement/Announcement";
 import Footer from "../../components/Footer/Footer";
@@ -18,7 +19,8 @@ const Cart = () => {
 
   const cart = useSelector((state) => state.cart);
   const [stripeToken, setStripeToken] = useState(null);
-  // const history = useHistory();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const onToken = (token) => {
     setStripeToken(token);
@@ -31,6 +33,10 @@ const Cart = () => {
           tokenId: stripeToken.id,
           amount: 500,
         });
+        navigate("/success");
+        dispatch(setStripeResponse(res));
+        dispatch(setSuccessPageCarts(cart));
+
         // history.push("/success", {
         //   stripeData: res.data,
         //   products: cart,
@@ -38,7 +44,7 @@ const Cart = () => {
       } catch {}
     };
     stripeToken && makeRequest();
-  }, [stripeToken, cart]);
+  }, [stripeToken, cart, navigate, dispatch]);
 
   return (
     <div className="container">

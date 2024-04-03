@@ -6,6 +6,8 @@ const cartSlice = createSlice({
     products: [],
     quantity: 0,
     total: 0,
+    stripeResponse: {},
+    successPageCarts: [],
   },
   reducers: {
     addProduct: (state, action) => {
@@ -13,8 +15,15 @@ const cartSlice = createSlice({
       state.products.push(action.payload);
       state.total += action.payload.price * action.payload.quantity;
     },
+    setStripeResponse: (state, action) => {
+      state.stripeResponse = action.payload;
+    },
+    setSuccessPageCarts: (state, action) => {
+      state.successPageCarts = action.payload;
+    },
   },
 });
 
-export const { addProduct } = cartSlice.actions;
+export const { addProduct, setStripeResponse, setSuccessPageCarts } =
+  cartSlice.actions;
 export default cartSlice.reducer;
