@@ -39,7 +39,7 @@ export const categories = [
     id: 1,
     img: categories1,
     title: "SHIRT STYLE!",
-    cat: "Women",
+    cat: "women",
   },
   {
     id: 2,
